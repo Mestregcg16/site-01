@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&family=Quicksand:wght@400;600;700&display=swap');
+/* Desativa a rolagem horizontal em dispositivos móveis */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 50%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.5rem  5%;
+}
+
+button {
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+}
+
+main {
+  max-width: 100vw;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  max-width: 90%;
+}
+
+h1{
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  font-family: 'Nunito';
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.65rem;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sections {
+  padding: 2rem 0;
+}
+
+.img-section {
+  width: 240px;
+  height: 243px;
+}
+.title-section{
+  font-family: Quicksand;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: rgba(55, 125, 255, 1);
+}
+
+.subtitle-section {
+  font-family: nunito;
+  font-weight: 600;
+  font-size: 2.7rem;
+  color: rgba(29,29,29,1);
+}
+
+.description-section {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.mini-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 2% 0;
+}
+.mini-card section{
+  flex-direction: row;
+}
+
+.mn-01 {
+  width: 12rem;
+  height: 6.5rem;
+  top: -2rem;
+  left: -1rem;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
+}
+.mn-01 section {
+  align-items: end;
+  gap: 0.3rem;
+}
+.mn-01 p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.mn-01 h3 {
+  font-family: nunito; 
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mn-02 {
+  width: 12rem;
+  height: 6.5rem;
+  bottom: -2rem;
+  right: -1rem;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mn-02 figure {
+  align-items: end;
+  gap: 0.3rem;
+}
+
+.mn-02 h3 {
+  font-family: nunito; 
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.mn-02 p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#about-us {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0%;
+}
+
+#services a {
+  cursor: pointer;
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Quicksand;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgba(55, 125, 255, 1);
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 3rem 0;
+}
+
+custom-card figure {
+  display: flex;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+custom-card .figure-01 {
+  background: rgba(55, 125, 255, 1);
+}
+
+custom-card .figure-02 {
+  background: rgba(255, 45, 45, 1);
+}
+
+custom-card .figure-03 {
+  background: rgba(124, 231, 97, 1);
+}
+
+custom-card .figure-04 {
+  background: rgba(255, 168, 0, 1);
+}
+
+custom-card h3 {
+  font-family: Quicksand;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#portfolio {
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+custom-figure {
+  max-width: 95vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colab-images {
+  position: relative;
+  height: 284.5px;
+  width: 90%;
+  min-width: 300px;
+  max-width: 320px;
+}
+
+.colab-img-01{
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 65%;
+  z-index: 2;
+}
+.colab-img-02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+}
+
+.colab-img-01 img, .colab-img-02 img{
+  width: 100%;
+}
+
+footer{
+  position: relative;
+  margin-top: 6rem;
+  background: rgba(56, 54, 56, 1);
+  color: white;
+  width: auto;
+  padding:1rem;
+  font-family: Quicksand;
+}
+
+footer section{
+  width: fit-content;
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 2vh;
+  background-color: white;
+}
+#imglogo{
+  height: 56px;
+  width: 56px;
+}
+
+footer section h4{
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+footer section p,
+footer a{
+  color: white;
+  font-family: Quicksand;
+  line-height: 4rem;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.social-medias{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.social-medias .icones{
+  width: 100%;
+  max-width:300px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-medias .icones figure {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.social-medias hr {
+  color: white;
+  size: 2px;
+  width: 100%;
+  max-width: 300px;
+  line-height: 5px;
+}
+.social-medias p {
+  line-height: 2;
+}
+
+#menu header{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#menu ul li{
+  display: flex;
+  height: 75px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#menu ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: Quicksand;
+  font-weight: 700;
+  font-size: 3rem;
+}
+/*CONFIG DOS NUMEROS*/
+/* Estilo de botão alternador para números */
+.number-container {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1.2px solid #333;
+  font-size: 16.8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.number.selected {
+  background-color: #20ff02b2;
+  color: #ff0000;
+}
+
+/* Estilo de botão quando clicado */
+.number:active {
+  background-color: #555; /* Altere a cor aqui para a cor desejada quando o botão for clicado */
+}
+#toggleSelection{
+  height: 34px;
+  width: 122px;
+  font-size: 15px;
+  border: solid 1px blue;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #555;
+  border-radius: 2vh;
+  transition: background-color 0.2s ease;
+  padding: 1 1px;
+  color: white;
+}
+#toggleSelection:hover{
+  height: 36px;
+  width: 125px;
+  border: 1.2px solid #07ff66ec;
+  font-size: 16px;
+  background-color: aquamarine;
+}
